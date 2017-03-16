@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://moying050.github.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year-:month-:day/:title/
 permalink_defaults:
 
 # Directory
@@ -78,3 +78,9 @@ feed:
   limit: 0
   hub:
   content:
+
+nofollow:
+    enable: true
+    exclude: # 不添加 nofollow 标签的连接
+    - exclude1.com
+    - exclude2.com
